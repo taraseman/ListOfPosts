@@ -1,0 +1,29 @@
+.post {
+    padding: 80px;
+
+    &__link-to-home {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        padding: 10px;
+
+        border: rgb(199, 194, 194) 1px solid;
+        color: rgb(199, 194, 194);
+        font-weight: bold;
+    }
+
+    &__user-name {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    &__comments {
+        width: 300px;
+
+    }
+
+    &__button {
+        margin-top: 30px;
+    }
+}
