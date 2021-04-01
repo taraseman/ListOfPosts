@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ListOfPosts/static/css/main.4db97a14.chunk.css",
-    "main.js": "/ListOfPosts/static/js/main.fdae728d.chunk.js",
-    "main.js.map": "/ListOfPosts/static/js/main.fdae728d.chunk.js.map",
-    "runtime-main.js": "/ListOfPosts/static/js/runtime-main.f7a560c8.js",
-    "runtime-main.js.map": "/ListOfPosts/static/js/runtime-main.f7a560c8.js.map",
-    "static/css/2.e372e80d.chunk.css": "/ListOfPosts/static/css/2.e372e80d.chunk.css",
-    "static/js/2.0aab06c3.chunk.js": "/ListOfPosts/static/js/2.0aab06c3.chunk.js",
-    "static/js/2.0aab06c3.chunk.js.map": "/ListOfPosts/static/js/2.0aab06c3.chunk.js.map",
-    "index.html": "/ListOfPosts/index.html",
-    "static/css/2.e372e80d.chunk.css.map": "/ListOfPosts/static/css/2.e372e80d.chunk.css.map",
-    "static/css/main.4db97a14.chunk.css.map": "/ListOfPosts/static/css/main.4db97a14.chunk.css.map",
-    "static/js/2.0aab06c3.chunk.js.LICENSE.txt": "/ListOfPosts/static/js/2.0aab06c3.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.4db97a14.chunk.css",
+    "main.js": "/static/js/main.fdae728d.chunk.js",
+    "main.js.map": "/static/js/main.fdae728d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.23111830.js",
+    "runtime-main.js.map": "/static/js/runtime-main.23111830.js.map",
+    "static/css/2.e372e80d.chunk.css": "/static/css/2.e372e80d.chunk.css",
+    "static/js/2.0aab06c3.chunk.js": "/static/js/2.0aab06c3.chunk.js",
+    "static/js/2.0aab06c3.chunk.js.map": "/static/js/2.0aab06c3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.e372e80d.chunk.css.map": "/static/css/2.e372e80d.chunk.css.map",
+    "static/css/main.4db97a14.chunk.css.map": "/static/css/main.4db97a14.chunk.css.map",
+    "static/js/2.0aab06c3.chunk.js.LICENSE.txt": "/static/js/2.0aab06c3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7a560c8.js",
+    "static/js/runtime-main.23111830.js",
     "static/css/2.e372e80d.chunk.css",
     "static/js/2.0aab06c3.chunk.js",
     "static/css/main.4db97a14.chunk.css",
