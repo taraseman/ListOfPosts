@@ -23,7 +23,7 @@ export const PeopleTable = () => {
   return (
     <>
       <h1 className="title">People</h1>
-      <table className="table is-fullwidth is-bordered">
+      <table className="table is-fullwidth  is-narrow">
         <thead>
           <tr>
             <th>
@@ -48,7 +48,7 @@ export const PeopleTable = () => {
             <tr
               key={user.id}
             >
-              <td>{user.id}</td>
+              <td>{`#${user.id}`}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>

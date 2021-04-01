@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useCallback } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import {
   getPostById,
@@ -20,7 +20,7 @@ export const PostDetails = () => {
 
   const [isPopupVisible, setPopupVisibility] = useState(false);
   const [title, setTitle] = useState('');
-  const [newComment, inputNewComment] = useState('');
+  const [newContent, inputNewContent] = useState('');
 
   const searchParams = new URLSearchParams(location.search);
   const postId = searchParams.get('postId');
@@ -37,32 +37,34 @@ export const PostDetails = () => {
   },
   []);
 
-  const deletePost = (id) => {
+  const deletePost = useCallback((id) => {
     deletePostById(id);
     setPosts(
       posts.filter(postDel => postDel.id !== +id),
     );
-  };
+  });
 
-  const submitForm = () => {
-    editPostByBody({
+  const submitForm = (event) => {
+    event.preventDefault();
+
+    const newPost = {
       ...post,
       title,
-      body: newComment,
-    }).then((editedPost) => {
-      setPost(editedPost);
-      setPosts(
-        posts.map(curPost => (curPost.id === +postId ? editedPost : curPost)),
-      );
+      body: newContent,
+    };
 
+    editPostByBody(newPost).then(() => {
+      setPost(newPost);
+      setPosts(
+        posts.map(curPost => (curPost.id === +postId ? newPost : curPost)),
+      );
       setPopupVisibility(false);
     });
   };
 
   const editPost = (oldTitle, oldPost) => {
     setTitle(oldTitle);
-    inputNewComment(oldPost);
-
+    inputNewContent(oldPost);
     setPopupVisibility(true);
   };
 
@@ -150,8 +152,8 @@ export const PostDetails = () => {
               className="textarea"
               type="email"
               placeholder="write your comment..."
-              value={newComment}
-              onChange={event => inputNewComment(event.target.value)}
+              value={newContent}
+              onChange={event => inputNewContent(event.target.value)}
               required
             />
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Popup.scss';
 
 export const Popup = ({ trigger, children, setPopupVisibility }) => {
@@ -20,4 +21,10 @@ export const Popup = ({ trigger, children, setPopupVisibility }) => {
       </div>
     </div>
   ) : '';
+};
+
+Popup.propTypes = {
+  trigger: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+  setPopupVisibility: PropTypes.func.isRequired,
 };
