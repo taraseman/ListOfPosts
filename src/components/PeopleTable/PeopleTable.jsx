@@ -56,9 +56,7 @@ export const PeopleTable = () => {
                 <button
                   type="button"
                   className="PostsList__button button is-info"
-                  onClick={() => {
-                    openUserPosts(user.id, user.name);
-                  }}
+                  onClick={() => openUserPosts(user.id, user.name)}
                 >
                   Posts
                 </button>

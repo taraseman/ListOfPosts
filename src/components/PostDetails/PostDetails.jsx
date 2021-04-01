@@ -34,8 +34,7 @@ export const PostDetails = () => {
     setPost(postFromContext);
     getCommentsByPostId(postId)
       .then(chosenComments => setComments(chosenComments));
-  },
-  []);
+  }, []);
 
   const deletePost = useCallback((id) => {
     deletePostById(id);

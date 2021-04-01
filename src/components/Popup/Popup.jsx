@@ -7,7 +7,7 @@ export const Popup = ({ trigger, children, setPopupVisibility }) => {
     setPopupVisibility(false);
   };
 
-  return (trigger) ? (
+  return (trigger) && (
     <div className="popup">
       <div className="popup__inner">
         <button
@@ -17,10 +17,10 @@ export const Popup = ({ trigger, children, setPopupVisibility }) => {
         >
           X
         </button>
-        { children }
+        {children}
       </div>
     </div>
-  ) : '';
+  );
 };
 
 Popup.propTypes = {
